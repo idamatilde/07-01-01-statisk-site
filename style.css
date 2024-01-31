@@ -1,0 +1,162 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  padding: 10px 30px 10px 30px;
+  background-color: aliceblue;
+}
+header a {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.2rem;
+  color: black;
+}
+header a:hover {
+  color: rgb(163, 205, 188);
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 6rem;
+}
+body {
+  background-color: rgb(162, 225, 162);
+  color: white;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+.logo :nth-child(2) {
+  color: black;
+}
+.kategori_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+.kategori {
+  width: 250px;
+  height: 250px;
+  background-image: url(images/stof.jpg);
+  background-size: cover;
+
+  border-radius: 100%;
+  transition: 0.5s;
+}
+.kategori p {
+  color: rgb(255, 226, 226);
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+.kategori:hover {
+  scale: 105%;
+  transition: 0.5s;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-align-center {
+  align-items: center;
+  justify-content: center;
+}
+.grid_liste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.grid_liste a {
+  color: white;
+}
+.grid_liste img {
+  height: 300px;
+  width: auto;
+  transition: 0.5s;
+}
+.grid_liste img:hover {
+  transition: 0.5s;
+  /* scale: 1.05; */
+}
+.grid_liste div {
+  background-color: rgba(0, 0, 0, 0.791);
+  padding: 15px;
+  gap: 10px;
+  font-family: "Figtree", sans-serif;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.sale {
+  position: absolute;
+  z-index: 10;
+  height: 40px;
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.515);
+}
+.sale p {
+  color: rgb(226, 105, 105);
+}
+div .udsolgt {
+  position: absolute;
+  z-index: 9;
+  height: 300px;
+  width: 225px;
+  color: rgb(226, 105, 105);
+  background-color: rgba(0, 0, 0, 0.471);
+}
+div .udsolgt p {
+  color: rgb(226, 105, 105);
+  font-weight: 700;
+}
+.grid_liste div:hover {
+  background-color: rgba(0, 0, 0, 0.791);
+  padding: 15px;
+  gap: 10px;
+  font-family: "Figtree", sans-serif;
+  color: rgb(82, 157, 59);
+  scale: 1.02;
+  transition: 0.3s;
+  font-size: 15px;
+}
+.produkt {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 50px;
+  background-color: rgba(255, 255, 255, 0.36);
+  padding: 15px;
+}
+.titel {
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  color: black;
+  gap: 10px;
+}
+p {
+  font-family: "Figtree", sans-serif;
+  color: darkslategrey;
+}
+h3 {
+  font-family: "Figtree", sans-serif;
+  color: darkslategrey;
+}
+.item_info {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 800px) {
+  .kategori_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr;
+    justify-items: center;
+  }
+}

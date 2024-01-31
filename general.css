@@ -1,0 +1,22 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.margin_bottom {
+  margin-bottom: 60px;
+}
+main {
+  margin: auto;
+  max-width: 1300px;
+  min-height: 100%;
+}
+/* body {
+  max-width: 1400px;
+} */
