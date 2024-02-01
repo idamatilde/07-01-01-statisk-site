@@ -39,11 +39,13 @@ body {
 .kategori {
   width: 250px;
   height: 250px;
-  background-image: url(images/stof.jpg);
+  background-image: url(images/stof.webp);
   background-size: cover;
 
   border-radius: 100%;
   transition: 0.5s;
+}
+div {
 }
 .kategori p {
   color: rgb(255, 226, 226);
@@ -144,6 +146,7 @@ p {
   font-family: "Figtree", sans-serif;
   color: darkslategrey;
 }
+
 h3 {
   font-family: "Figtree", sans-serif;
   color: darkslategrey;
