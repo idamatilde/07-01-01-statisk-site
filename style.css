@@ -26,9 +26,11 @@ body {
 .logo {
   display: flex;
   flex-direction: row;
+  color: black;
 }
 .logo :nth-child(2) {
-  color: black;
+  color: rgb(12, 62, 69);
+  font-weight: 900;
 }
 .kategori_grid {
   display: grid;
@@ -45,7 +47,10 @@ body {
   border-radius: 100%;
   transition: 0.5s;
 }
-div {
+#Forside {
+  background-image: url(images/portswear.webp);
+
+  background-size: cover;
 }
 .kategori p {
   color: rgb(255, 226, 226);
