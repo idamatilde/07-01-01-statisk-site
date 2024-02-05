@@ -94,14 +94,14 @@ a {
   transition: 0.5s;
   /* scale: 1.05; */
 }
-.grid_liste div {
+/* .grid_liste div {
   background-color: rgba(0, 0, 0, 0.791);
   padding: 15px;
   gap: 10px;
   font-family: "Figtree", sans-serif;
   font-size: 15px;
   transition: 0.3s;
-}
+} */
 .sale {
   position: absolute;
   z-index: 10;
@@ -149,15 +149,34 @@ div .udsolgt p {
 }
 p {
   font-family: "Figtree", sans-serif;
-  color: darkslategrey;
+  color: rgb(255, 255, 255);
 }
 
 h3 {
   font-family: "Figtree", sans-serif;
-  color: darkslategrey;
+  color: rgb(193, 255, 191);
 }
 .item_info {
   max-width: 500px;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+.item_article {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.791);
+  font-family: "Figtree", sans-serif;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.item_article:hover {
+  scale: 1.02;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 800px) {

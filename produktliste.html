@@ -18,15 +18,19 @@
 <body>
     <header class="margin_bottom"><a href="index.html">Forside</a><a href="kategori.html">Kategorier</a><a
             href="produktliste.html">Produktliste</a><a href="produkt.html">Produkt</a></header>
-    <main class="flex-col flex-align-center">
-        <h1 class="margin_bottom">Kategori</h1>
-        <div class="grid_liste">
-            <a href="produkt.html">
-                <div class="flex-row"><img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="leggings">
-                    <h2>Leggings</h2>
-                </div>
-            </a>
-            <a href="produkt.html">
+    <main>
+        <section>
+            <h1 class="margin_bottom">Kategori</h1>
+        </section>
+        <!-- <div class="grid_liste"> -->
+        <a href="produkt.html">
+            <!-- <div class="flex-row"> -->
+            <div class="card_container"></div>
+            <!-- </div> -->
+        </a>
+        <!-- <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp"
+                            alt="leggings"> -->
+        <!-- <a href="produkt.html">
                 <div class="flex-row">
                     <div class="sale flex-col flex-align-center">
                         <p>Sale</p>
@@ -35,9 +39,9 @@
                         <h2>T-shirt</h2>
                         <p class="price">300 kr</p>
                     </div>
-                </div>
-            </a>
-            <a href="produkt.html">
+                </div> -->
+        <!-- </a> -->
+        <!-- <a href="produkt.html">
                 <div class="flex-row">
                     <div class="udsolgt flex-col flex-align-center">
                         <p>Udsolgt</p>
@@ -58,14 +62,29 @@
                     <img src="https://kea-alt-del.dk/t7/images/jpg/1000/1580.jpg " alt="rhomper">
                     <h2>Dragt</h2>
                 </div>
-            </a>
-            <!-- <div><img src="images/leggings.webp" alt="leggings"></div> -->
-            <!-- <div><img src="images/puma_tshirt.webp" alt="puma-tshirt"></div>
-            <div><img src="images/romper.jpg" alt="romper"></div>
-            <div><img src="images/puma_boldt.jpg" alt="boldt"></div> -->
-
+            </a> -->
+        <!-- </div> -->
     </main>
     <footer></footer>
+    <script src="script.js"> </script>
 </body>
 
 </html>
+<template class="card_template">
+    <article class="item_article">
+
+        <div class="item_image_container">
+            <!-- <img class="item_image"> -->
+            <img src="https://picsum.photos/200/300" alt="product">
+        </div>
+        <div class="text_container">
+            <h3 class="item_productdisplayname">Goood Beer</h3>
+            <p class="item_price">Drink god beer</p>
+            <p class="item_gender">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis animi nostrum
+                ipsa
+                nisi repellendus, aliquam aperiam iure repellat pariatur temporibus, saepe et magnam commodi fugit
+                possimus
+                architecto ea aut corrupti.</p>
+        </div>
+    </article>
+</template>
