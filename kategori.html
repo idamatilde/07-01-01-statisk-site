@@ -13,12 +13,22 @@
 </head>
 
 <body>
-    <header class="margin_bottom"><a href="index.html">Forside</a><a href="kategori.html">Kategorier</a><a
-            href="produktliste.html">Produktliste</a><a href="produkt.html">Produkt</a></header>
+    <header class="margin_bottom"><a href="index.html">Forside</a><a href="kategori.html">Kategorier</a></header>
     <main>
 
-        <div class="kategori_grid">
-            <a href="produktliste.html">
+        <div class="kategori_container kategori_grid">
+
+            <!-- <template class="kategori_template">
+                <article class="kategori_article">
+                    <a>
+                        <div class="kat_div kategori margin_bottom flex-col flex-align-center">
+                            <p class="kat_text">Accessories</p>
+                        </div>
+                    </a>
+                </article>
+            </template> -->
+
+            <!-- <a href="produktliste.html">
                 <div class="kategori margin_bottom flex-col flex-align-center">
                     <p>Accessories</p>
                 </div>
@@ -48,10 +58,20 @@
                 <div class="kategori margin_bottom flex-col flex-align-center">
                     <p>Sporting Goods</p>
                 </div>
-            </a>
+            </a> -->
         </div>
     </main>
     <footer></footer>
+    <script src="kategorijava.js"></script>
 </body>
 
 </html>
+<template class="kategori_template">
+    <article class="kategori_article">
+        <a>
+            <div class="kat_div kategori margin_bottom flex-col flex-align-center">
+                <p class="kat_text">Accessories</p>
+            </div>
+        </a>
+    </article>
+</template>

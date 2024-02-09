@@ -1,7 +1,10 @@
 window.addEventListener("DOMContentLoaded", init);
 
-const itemURL = "https://kea-alt-del.dk/t7/api/products?limit=50&start=10";
+const params = new URLSearchParams(window.location.search);
+const kategori = params.get("category");
+const itemURL = "https://kea-alt-del.dk/t7/api/products?category=" + kategori;
 
+// &start=10
 let itemTemplate;
 let itemContainer;
 
@@ -51,7 +54,11 @@ function showItems(itemJSON) {
         .classList.remove("hide");
     }
     if (item.discount) {
+      console.log("item.discount", item);
       itemClone.querySelector(".item_info_sale").classList.remove("hide");
+      itemClone.querySelector(".item_new_price").textContent =
+        item.price - Math.ceil((item.price * item.discount) / 100) + " kr";
+      itemClone.querySelector(".item_price").classList.add("hide");
       itemClone.querySelector(".item_info_sale").textContent =
         item.discount + "%";
     }
